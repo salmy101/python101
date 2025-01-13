@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs: Lets Go Camping!</title>
+</head>
+<body>
+  <h1>Mad Libs 🤪</h1>
+  <h2>Let's Go Camping 🏕</h2>
+  <p>Fill in the following form so that see your silly camping story!</p>
+  <form id="madlibs-form">
+    <label for="input-0">Proper Noun (Person’s Name):</label>
+    <input type="text" id="input-0" required><br><br>
+
+    <label for="input-1">Noun:</label>
+    <input type="text" id="input-1" required><br><br>
+
+    <label for="input-2">Adjective (Feeling):</label>
+    <input type="text" id="input-2" required><br><br>
+
+    <label for="input-3">Verb: </label>
+    <input type="text" id="input-3" required><br><br>
+
+    <label for="input-4">Adjective (Feeling): </label>
+    <input type="text" id="input-4" required><br><br>
+
+    <label for="input-5">Animal: </label>
+    <input type="text" id="input-5" required><br><br>
+
+    <label for="input-6">Verb: </label>
+    <input type="text" id="input-6" required><br><br>
+
+    <label for="input-7">Color: </label>
+    <input type="text" id="input-7" required><br><br>
+
+    <label for="input-8">Verb (ending in ing): </label>
+    <input type="text" id="input-8" required><br><br>
+
+    <label for="input-9">Adverb (ending in ly): </label>
+    <input type="text" id="input-9" required><br><br>
+
+    <label for="input-10">Number (spelt as a word):: </label>
+    <input type="text" id="input-10" required><br><br>
+
+    <label for="input-11">Measure of Time (min, hrs, days, etc): </label>
+    <input type="text" id="input-11" required><br><br>
+
+    <label for="input-12">Color: </label>
+    <input type="text" id="input-12" required><br><br>
+
+    <label for="input-13">Animal: </label>
+    <input type="text" id="input-13" required><br><br>
+
+    <label for="input-14">Number (written): </label>
+    <input type="text" id="input-14" required><br><br>
+
+    <label for="input-15">Silly Word: </label>
+    <input type="text" id="input-15" required><br><br>
+
+    <label for="input-16">Noun: </label>
+    <input type="text" id="input-16" required><br><br>
+
+    <button type="submit">Generate Story</button>
+  </form>
+
+  <br><br>
+  <h3>MAD LIBS: A Camping We Will Go!</h3>
+  <div id="output"></div>
+
+  <py-script src="./main.py" ></py-script>
+
+  <script type="text/javascript">
+    window.onload = function() {
+        const form = document.querySelector("#madlibs-form");
+        console.log("Form found:", form);  // Debugging line
+        form.addEventListener("submit", function(event) {
+            console.log("Form submitted");  // Check if the event is fired
+            event.preventDefault();  // Prevent default form submission
+        });
+    };
+</script>
+
+</body>
+</html>
